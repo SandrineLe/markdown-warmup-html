@@ -1,0 +1,135 @@
+/* Body + Liens */
+
+
+body {
+   font-family: 'Roboto', sans-serif;
+    margin-top:10%;
+    margin-bottom:10%;
+    margin-left:30%;
+    margin-right:30%;
+    background-color:white;
+    color:dimgrey;    
+    font-size:14px;}
+    
+a {text-decoration: none !important;
+color:darkgray;}
+a:hover {text-decoration: none !important;}
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;
+color:#a0162f;}
+a:active {text-decoration: none;}
+
+
+
+/* Titres */
+
+h1 {font-family: 'Cormorant Infant', serif;
+font-weight:400;
+font-style:italic;
+font-size:45px;
+color:#a0162f;
+text-transform:lowercase;
+line-height:4px;
+}
+
+h2 {font-family: 'Roboto', sans-serif;
+font-weight:600;
+font-size:14px;
+text-transform:lowercase;
+line-height:4px;
+}
+
+h3 {     
+display: flex;
+align-items: center;
+color: #a0162f;
+justify-content: center;
+text-decoration: none;
+font-family: 'Roboto', sans-serif;
+font-weight:600;
+font-size: 16px;
+text-transform:lowercase;
+}
+
+
+
+/* Id_pic */
+
+.id_pic {width:200px;
+    margin-top:10px;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+
+.id_pic:hover {width:200px;
+     margin-top:10px;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+/* Table */
+
+table {
+  max-width: 100%;
+}
+
+tr:nth-child(odd) {
+  background-color: #eee;
+}
+
+th {
+  background-color: #eee;
+  color: #a0162f;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 0.5em 1em;
+}
+
+/* Liste */
+
+.lhs {
+list-style: none;}
+
+/* Count on me */
+
+ol {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    height: 20px;
+    width: 500px;
+    overflow: hidden;
+    line-height:18px;
+}
+
+ol li {
+    position: relative;
+    animation-name: scroll;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+
+    0%,
+    10% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    14%,
+    24% {
+        transform: translate3d(0, -100%, 0);
+    }
+
+    28%,
+    38% {
+        transform: translate3d(0, -200%, 0);
+    }
+
+    42%,
+    52% {
+        transform: translate3d(0, -300%, 0);
+    }
